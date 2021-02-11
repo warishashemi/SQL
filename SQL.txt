@@ -1,0 +1,6 @@
+select * from bricks;
+select b.* ,(select count (shape) from bricks)as report  from bricks b 
+select b.* , (select count (*) from bricks where colour = b.colour ) from bricks b
+select b.* ,(select count (*) from bricks ) as number_of_row,(select count(shape) from bricks where colour = b.colour )as Total_by_id  from bricks b
+
+
