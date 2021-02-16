@@ -4,3 +4,13 @@ select b.* , (select count (*) from bricks where colour = b.colour ) from bricks
 select b.* ,(select count (*) from bricks ) as number_of_row,(select count(shape) from bricks where colour = b.colour )as Total_by_id  from bricks b
 
 
+
+select b.*,
+       first_value ( weight ) over ( 
+         order by brick_id 
+       ) first_weight_by_id,
+       last_value ( weight ) over ( 
+         order by brick_id 
+         range between current row and unbounded following
+       ) last_weight_by_id
+from   bricks b;
