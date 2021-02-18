@@ -14,3 +14,17 @@ select b.*,
          range between current row and unbounded following
        ) last_weight_by_id
 from   bricks b;
+
+
+
+create table Familiy(
+Taz_id number not null   ,
+Job varchar (40),
+name varchar(30),
+School varchar(30),
+university varchar(40)
+
+)
+
+insert into Familiy (Taz_id,Job,name,School,university) values (1,'Doctor','ahmad','omid','kabul')
+select * from Familiy
