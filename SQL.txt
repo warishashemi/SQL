@@ -28,3 +28,57 @@ university varchar(40)
 
 insert into Familiy (Taz_id,Job,name,School,university) values (1,'Doctor','ahmad','omid','kabul')
 select * from Familiy
+
+
+
+
+insert all
+when job ='salesman' and != then
+into table4  (Id,name, hiredate) values (empno,ename,hiredate)
+when comm = 2000 then
+into table2 (Id,name, hiredate) values (empno,ename,hiredate)
+when comm < 1000 then 
+into table3 (Id,name, hiredate) values (empno,ename,hiredate)
+
+select empno,ename,hiredate,comm  from emp 
+
+select * from mytable
+
+
+create table table1
+(Id number not null,
+Name varchar (100) not null,
+Hiredate date not null)
+
+
+
+
+create table table2
+(Id number not null,
+Name varchar (100) not null,
+Hiredate date not null)
+
+
+
+create table table3
+(Id number not null,
+Name varchar (100) not null,
+Hiredate date not null)
+
+create table table4
+(Id number not null,
+Name varchar (100) not null,
+Hiredate date not null)
+
+insert all
+when job ='SALESMAN' and ename!= 'ALLEN' then
+into table4  (Id,name, hiredate) values (empno,ename,hiredate)
+
+
+select empno,ename,hiredate,job  from emp 
+
+
+
+create table table5 as select ename,job ,comm ' from emp 
+
+select * from table5
