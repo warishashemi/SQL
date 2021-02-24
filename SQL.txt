@@ -82,3 +82,99 @@ select empno,ename,hiredate,job  from emp
 create table table5 as select ename,job ,comm ' from emp 
 
 select * from table5
+
+
+
+
+
+create table Studnet(Id int , name varchar(40))
+
+
+
+
+insert all 
+
+into Studnet(Id,name) values 
+(1,'ahmad')
+into Studnet(Id,name) values 
+(2,'nawid')
+into Studnet(Id,name) values 
+(3,'qias')
+into Studnet(Id,name) values 
+(4,'yaqob')
+into Studnet(Id,name) values 
+(5,'zahid')
+into Studnet(Id,name) values 
+(6,'wazxir')
+into Studnet(Id,name) values 
+(7,'wakil')
+into Studnet(Id,name) values 
+(8,'masih')
+into Studnet(Id,name) values 
+(9,'khan')
+into Studnet(Id,name) values 
+(10,'chando')
+into Studnet(Id,name) values 
+(11,'mando')
+into Studnet(Id,name) values 
+(12,'kando')
+into Studnet(Id,name) values 
+(13,'lado')
+into Studnet(Id,name) values 
+(14,'nano') select * from dual
+
+
+select * from studnet
+
+create table University
+(Uni_Id number not null,
+Uni_Name varchar (100) not null,
+Uni_ratting varchar (20) not null,
+constraint Uni_product primary key (Uni_Id))
+
+insert all 
+
+into University (Uni_id,Uni_Name,Uni_ratting) values (1,'Kabul','afg')
+into University (Uni_id,Uni_Name,Uni_ratting) values (2,'Parwan','afg')
+into University (Uni_id,Uni_Name,Uni_ratting) values (3,'Herat','afg')
+into University (Uni_id,Uni_Name,Uni_ratting) values (4,'Mazar','afg')
+into University (Uni_id,Uni_Name,Uni_ratting) values (5,'kandahar','afg')
+into University (Uni_id,Uni_Name,Uni_ratting) values (6,'Melborne','afg')
+into University (Uni_id,Uni_Name,Uni_ratting) values (7,'Sydny','afg')
+into University (Uni_id,Uni_Name,Uni_ratting) values (8,'Conbera','afg')
+into University (Uni_id,Uni_Name,Uni_ratting) values (9,'Vistorai','afg')
+
+select * from dual 
+
+select * from university 
+
+
+
+
+
+create table Mytable
+(Id number not null,
+Name varchar (100) not null,
+Hiredate date not null,
+
+constraint Id_product primary key (Id))
+
+
+create table Mytable1
+(Id number not null,
+Name varchar (100) not null,
+Hiredate date not null,
+
+constraint Id1_product primary key (Id))
+
+create table Mytable2
+(Id number not null,
+Name varchar (100) not null,
+Hiredate date not null,
+
+constraint Id2_product primary key (Id))
+
+
+
+
+
